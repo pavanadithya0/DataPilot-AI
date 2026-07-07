@@ -1,37 +1,30 @@
 """
 Database Connection Module
---------------------------
-This module is responsible for:
-1. Creating the SQLite database engine.
-2. Creating all tables defined in schema.py.
-3. Providing a reusable database connection.
 """
 
+from pathlib import Path
 from sqlalchemy import create_engine
 from database.schema import metadata
-import os
-# SQLite database file
-DATABASE_URL = "sqlite:///database/business.db"
 
-# Create SQLAlchemy engine
+# Project root
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+# Absolute path to database
+DB_PATH = BASE_DIR / "database" / "business.db"
+
+print("Database path:", DB_PATH)
+print("Database exists:", DB_PATH.exists())
+
+DATABASE_URL = f"sqlite:///{DB_PATH}"
+
 engine = create_engine(
     DATABASE_URL,
-    echo=False
+    echo=False,
 )
-print("Database path:", os.path.abspath("database/business.db"))
-
 
 def create_database():
-    """
-    Create all database tables.
-    This function is safe to call multiple times.
-    """
     metadata.create_all(engine)
     print("✅ Database and tables created successfully.")
 
-
 def get_engine():
-    """
-    Returns the SQLAlchemy engine.
-    """
     return engine

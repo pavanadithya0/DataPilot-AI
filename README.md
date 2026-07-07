@@ -36,7 +36,8 @@ Users can ask business questions in plain English, and the application automatic
 > Add a screenshot here
 
 ```
-screenshots/dashboard.png
+<img width="1917" height="870" alt="image" src="https://github.com/user-attachments/assets/af298b05-eb5b-4b9c-9f23-06ccacbcfbb5" />
+
 ```
 
 ---
@@ -46,7 +47,11 @@ screenshots/dashboard.png
 > Add a screenshot here
 
 ```
-screenshots/database_explorer.png
+<img width="1917" height="877" alt="image" src="https://github.com/user-attachments/assets/de3c9bc5-9fce-4734-bd89-b0efbdad6131" />
+
+<img width="1917" height="866" alt="image" src="https://github.com/user-attachments/assets/b11c5bae-3c6a-4bef-bbe9-2dfd6d219741" />
+
+
 ```
 
 ---
@@ -56,7 +61,8 @@ screenshots/database_explorer.png
 > Add a screenshot here
 
 ```
-screenshots/chart.png
+<img width="1917" height="868" alt="image" src="https://github.com/user-attachments/assets/bf8cf3d6-731b-4967-9f9c-ea2441006d44" />
+
 ```
 
 ---
@@ -128,7 +134,7 @@ DataPilot-AI/
 ### Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/DataPilot-AI.git
+git clone https://github.com/pavanadithya0/DataPilot-AI.git
 ```
 
 ---

@@ -10,6 +10,7 @@ venv/
 
 # Database
 *.db
+!database/business.db
 
 # VS Code
 .vscode/
